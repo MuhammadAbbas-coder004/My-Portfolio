@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import { useState } from "react";
 import { Fade } from "react-reveal";
 import { useSfx } from "utils/use-sfx";
@@ -47,9 +46,8 @@ const Footer = () => {
             <p className="text-center text-white text-sm sm:text-base font-medium tracking-wide mt-8">
               Developed with{" "}
               <button onClick={handleClick} className="link cursor-none">
-                <span className="block animate-bounce">❤️</span>
               </button>{" "}
-              by <span className="text-white">Shubh Porwal</span>
+              by <span className="text-white">Muhammad Abbas</span>
             </p>
           </div>
         </div>

@@ -1,16 +1,16 @@
 # devfolio
 
-<a href="https://shubhporwal.me">
+<a href="https://github.com/MuhammadAbbas-coder004">
   <img alt="devfolio" src="./public/preview.png" />
 </a>
 
-[![version](https://img.shields.io/badge/version-1.0.0-black)](https://github.com/shubh73/devfolio)
-[![license](https://img.shields.io/github/license/shubh73/devfolio?color=black)](https://github.com/shubh73/devfolio/blob/main/LICENSE.md)
-[![If Useful](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=flat&color=black)](https://github.com/shubh73/devfolio)
+[![version](https://img.shields.io/badge/version-1.0.0-black)](https://github.com/MuhammadAbbas-coder004)
+[![license](https://img.shields.io/github/license/MuhammadAbbas-coder004/devfolio?color=black)](https://github.com/MuhammadAbbas-coder004/devfolio/blob/main/LICENSE.md)
+[![If Useful](https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=flat&color=black)](https://github.com/MuhammadAbbas-coder004)
 
 👨‍🎓 An eye-catching developer Portfolio, Built on NextJS, GSAP, Tailwind and React
 
-### ✨ [Live Demo](http://www.shubhporwal.me/)
+### ✨ [Live Demo](https://github.com/MuhammadAbbas-coder004)
 
 ## Getting Started
 
@@ -35,4 +35,4 @@ Every time I learn that someone has duplicated my website without giving me cred
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=shubh73/devfolio&type=Date)](https://www.star-history.com/#shubh73/devfolio&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=MuhammadAbbas-coder004/devfolio&type=Date)](https://www.star-history.com/#MuhammadAbbas-coder004/devfolio&Date)

@@ -1,16 +1,15 @@
 export const METADATA = {
-  author: "Shubh Porwal",
-  title: "Portfolio | Shubh Porwal",
+  author: "Muhammad Abbas",
+  title: "Portfolio | Muhammad Abbas",
   description:
-    "Shubh Porwal is a passionate Product Engineer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
-  siteUrl: "https://www.shubhporwal.me/",
-  twitterHandle: "@shubhporwal24",
+    "Muhammad Abbas is a passionate MERN Stack Developer, dedicated to crafting aesthetic and modern apps that captivate and engage users.",
+  siteUrl: "",
+  twitterHandle: "",
   keywords: [
-    "Shubh Porwal",
-    "Product Engineer",
-    "Frontend Engineer",
-    "React Native Engineer",
-    "Software Engineer",
+    "Muhammad Abbas",
+    "Web Developer",
+    "App Developer",
+    "Software Developer",
     "Portfolio",
     "Devfolio",
     "Folio",
@@ -45,60 +44,57 @@ export const MENULINKS = [
 ];
 
 export const TYPED_STRINGS = [
-  "A pragmatic Product Engineer",
-  "I build things for the web",
+  "A passionate MERN Stack Developer",
+  "I build things for the web and mobile",
   "I create aesthetic and modern apps",
 ];
 
 export const SOCIAL_LINKS = [
   {
     name: "mail",
-    url: "mailto:shubhporwal73@gmail.com",
+    url: "mailto:your-email@example.com",
   },
   {
     name: "linkedin",
-    url: "https://www.linkedin.com/in/shubhporwal/",
+    url: "https://www.linkedin.com/in/muhammad-abbas-910693381",
   },
   {
     name: "github",
-    url: "https://github.com/shubh73",
+    url: "https://github.com/MuhammadAbbas-coder004",
   },
   {
     name: "instagram",
-    url: "https://www.instagram.com/shubhii73/",
-  },
-  {
-    name: "twitter",
-    url: "https://x.com/shubhporwal24",
+    url: "https://www.instagram.com/MABBASMSHAHI/",
   },
 ];
 
 export const SKILLS = {
-  languagesAndTools: [
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "sass",
-    "nodejs",
-    "webpack",
-    "vite",
-    "firebase",
-    "figma",
-    "tanstack",
-  ],
+  languagesAndTools: ["html", "css", "javascript", "typescript", "sass"],
   librariesAndFrameworks: [
-    "expo",
     "react",
-    "redux",
+    "reactnative",
     "nextjs",
     "tailwindcss",
-    "styledcomponents",
+    "bootstrap",
+    "daisyui",
+    "materialui",
+    "shadcnui",
     "antdesign",
-    "chakra-ui",
+    "threejs",
+    "gsap",
+    "barbajs",
+    "motionone",
+    "swiperjs",
+    "framermotion",
+    "redux",
+    "reactrouter",
   ],
-  databases: ["mysql", "mongodb"],
-  other: ["git", "cursor", "sanity"],
+  databases: [
+    "mongodb",
+    "supabase",
+    "firebase",
+  ],
+  other: ["git", "github", "nodejs", "express"],
 };
 
 export const PROJECTS = [
@@ -210,7 +206,7 @@ export const WORK_CONTENTS = {
         "Hiring was broken — manual, biased, and slow. We launched Round1 AI to fix that: authentic voice interviews, built-in bias checks and real-time insights. Today, it powers thousands of interviews each week, letting teams hire smarter, faster and fairer.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Senior Frontend Engineer
+          MERN Stack Developer
         </div>
       ),
     },
@@ -220,7 +216,7 @@ export const WORK_CONTENTS = {
         "The early web app struggled with slow performance and zero retention. I rebuilt it from the ground up with a sleek UI, faster load times and SEO-optimized. Then seeded a rich content layer to spark discovery. The payoff? 6x more impressions and 10x the organic installs all without ads, just momentum.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer
+          MERN Stack Developer
         </div>
       ),
     },
@@ -242,7 +238,7 @@ export const WORK_CONTENTS = {
         "Since 2023, the Dukaan Seller Dashboard struggled with technical issues and a broken user experience due to accumulated technical debt. Leading a team of two junior developers, we migrated the dashboard from CSR to SSR, redesigned the UI, and overhauled the codebase in the process. This resolved the technical debt and vastly improved the user experience, making it Dukaan's largest and most impactful migration.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Senior Frontend Engineer
+          MERN Stack Developer
         </div>
       ),
     },
@@ -252,7 +248,7 @@ export const WORK_CONTENTS = {
         "Recognizing the need for improved performance and user engagement, I spearheaded the migration of the Dukaan App from native to React-Native for iOS and Android platforms. This strategic move led to a X% enhancement in app performance and a Y% boost in user engagement, representing a significant milestone in the app's evolution.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer
+          MERN Stack Developer
         </div>
       ),
     },
@@ -262,7 +258,7 @@ export const WORK_CONTENTS = {
         "Leveraging user feedback and analytics, I improved the seller web dashboard design, reducing bounce rates. Simultaneously, I overhauled the build process, slashing bundle size and boosting overall performance.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Frontend Engineer Intern
+          MERN Stack Developer Intern
         </div>
       ),
     },

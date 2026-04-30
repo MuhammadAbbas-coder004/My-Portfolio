@@ -60,11 +60,11 @@ const Meta = () => (
           "@type": "Person",
           name: METADATA.author,
           url: METADATA.siteUrl,
-          jobTitle: "Product Engineer",
+          jobTitle: "MERN Stack Developer",
           sameAs: [
-            "https://github.com/shubh73",
-            "https://x.com/shubhporwal24",
-            "https://www.linkedin.com/in/shubhporwal/",
+            "https://github.com/MuhammadAbbas-coder004",
+            "https://www.linkedin.com/in/muhammad-abbas-910693381",
+            "https://www.instagram.com/MABBASMSHAHI/",
           ],
         }),
       }}

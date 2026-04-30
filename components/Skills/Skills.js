@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useLayoutEffect, useRef } from "react";
-import Image from "next/image";
+
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { MENULINKS, SKILLS } from "../../constants";
@@ -65,13 +65,16 @@ const Skills = () => {
             </h3>
             <div className="flex items-center flex-wrap gap-6 staggered-reveal">
               {SKILLS.languagesAndTools.map((skill) => (
-                <Image
-                  key={skill}
-                  src={`/skills/${skill}.svg`}
-                  alt={skill}
-                  width={50}
-                  height={50}
-                />
+                <div key={skill} className="flex flex-col items-center gap-2">
+                  <img
+                    src={`/skills/${skill}.svg`}
+                    alt={skill}
+                    width={50}
+                    height={50}
+                    loading="lazy"
+                  />
+                  <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -81,13 +84,16 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap gap-6 transform-gpu staggered-reveal">
               {SKILLS.librariesAndFrameworks.map((skill) => (
-                <Image
-                  key={skill}
-                  src={`/skills/${skill}.svg`}
-                  alt={skill}
-                  width={50}
-                  height={50}
-                />
+                <div key={skill} className="flex flex-col items-center gap-2">
+                  <img
+                    src={`/skills/${skill}.svg`}
+                    alt={skill}
+                    width={50}
+                    height={50}
+                    loading="lazy"
+                  />
+                  <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
+                </div>
               ))}
             </div>
           </div>
@@ -98,29 +104,35 @@ const Skills = () => {
               </h3>
               <div className="flex flex-wrap gap-6 transform-gpu">
                 {SKILLS.databases.map((skill) => (
-                  <Image
-                    key={skill}
-                    src={`/skills/${skill}.svg`}
-                    alt={skill}
-                    width={50}
-                    height={50}
-                  />
+                  <div key={skill} className="flex flex-col items-center gap-2">
+                    <img
+                      src={`/skills/${skill}.svg`}
+                      alt={skill}
+                      width={50}
+                      height={50}
+                      loading="lazy"
+                    />
+                    <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
+                  </div>
                 ))}
               </div>
             </div>
             <div className="staggered-reveal">
               <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4">
-                Other
+                BACKEND
               </h3>
               <div className="flex flex-wrap gap-6 transform-gpu">
                 {SKILLS.other.map((skill) => (
-                  <Image
-                    key={skill}
-                    src={`/skills/${skill}.svg`}
-                    alt={skill}
-                    width={50}
-                    height={50}
-                  />
+                  <div key={skill} className="flex flex-col items-center gap-2">
+                    <img
+                      src={`/skills/${skill}.svg`}
+                      alt={skill}
+                      width={50}
+                      height={50}
+                      loading="lazy"
+                    />
+                    <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
+                  </div>
                 ))}
               </div>
             </div>

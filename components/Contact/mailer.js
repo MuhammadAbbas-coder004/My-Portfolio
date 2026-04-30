@@ -1,16 +1,20 @@
-import emailjs from "@emailjs/browser";
+const mail = async ({ name, email, message }) => {
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      access_key: process.env.NEXT_PUBLIC_WEB3FORMS_KEY,
+      name: name,
+      email: email,
+      message: message,
+    }),
+  });
 
-const mail = ({ name, email, message }) =>
-  emailjs.send(
-    process.env.NEXT_PUBLIC_SERVICE_ID,
-    process.env.NEXT_PUBLIC_TEMPLATE_ID,
-    { name, email, message },
-    {
-      publicKey: process.env.NEXT_PUBLIC_USER_ID,
-      limitRate: {
-        throttle: 10000, // 10s
-      },
-    }
-  );
+  const result = await response.json();
+  return { status: response.status, ...result };
+};
 
 export default mail;
