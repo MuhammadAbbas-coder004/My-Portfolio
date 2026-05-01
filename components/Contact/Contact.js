@@ -356,7 +356,23 @@ const Contact = () => {
             }
             onClick={handleSubmit}
           >
-            <span>Send -&gt;</span>
+            <span className="flex items-center justify-center">
+              <span className="mr-3 tracking-wider font-bold">SEND</span>
+              <svg 
+                className={styles.arrowIcon} 
+                width="22" 
+                height="22" 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="currentColor" 
+                strokeWidth="2" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </span>
             <span className={styles.success}>
               <svg viewBox="0 0 16 16">
                 <polyline points="3.75 9 7 12 13 5"></polyline>
@@ -379,32 +395,62 @@ const Contact = () => {
         label,
         textarea {
           cursor: none;
+          transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        input,
+        textarea {
+          position: relative;
+          background: rgba(139, 49, 255, 0.03);
         }
 
         input:hover,
         textarea:hover {
-          box-shadow: 0 0 0.3rem #7000ff;
+          box-shadow: 0 0 0.8rem rgba(139, 49, 255, 0.45), 0 0 2rem rgba(139, 49, 255, 0.1);
+          border-color: #a855f7;
+          transform: translateY(-2px);
+          background: rgba(139, 49, 255, 0.05);
         }
 
-        input:active,
         input:focus,
-        textarea:active,
         textarea:focus {
-          box-shadow: 0 0 0.3rem #000000;
+          box-shadow: 0 0 1.2rem rgba(139, 49, 255, 0.5), 0 0 3rem rgba(139, 49, 255, 0.15), inset 0 0 0.5rem rgba(139, 49, 255, 0.05);
+          border-color: #a855f7;
+          background: rgba(139, 49, 255, 0.06);
+          animation: inputPulseGlow 2s ease-in-out infinite;
+        }
+
+        @keyframes inputPulseGlow {
+          0%, 100% {
+            box-shadow: 0 0 1.2rem rgba(139, 49, 255, 0.5), 0 0 3rem rgba(139, 49, 255, 0.15);
+          }
+          50% {
+            box-shadow: 0 0 1.5rem rgba(139, 49, 255, 0.65), 0 0 4rem rgba(139, 49, 255, 0.2);
+          }
         }
 
         input:focus + label,
         input:valid + label {
           height: 50%;
           padding-left: 0;
-          transform: translateY(-100%);
+          transform: translateY(-100%) scale(0.85);
+          color: #a855f7;
+          text-shadow: 0 0 10px rgba(139, 49, 255, 0.5);
+          letter-spacing: 0.05em;
         }
 
         textarea:focus + label,
         textarea:valid + label {
           height: 17%;
           padding-left: 0;
-          transform: translateY(-100%);
+          transform: translateY(-100%) scale(0.85);
+          color: #a855f7;
+          text-shadow: 0 0 10px rgba(139, 49, 255, 0.5);
+          letter-spacing: 0.05em;
+        }
+
+        label {
+          transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
       `}</style>
     </section>
