@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import { useSfx } from "utils/use-sfx";
 import { cn } from "utils/cn";
 
@@ -15,10 +14,8 @@ const Tab = ({ index, tab, activeTab, handleOnClick, setIsHovering }) => {
       }}
     >
       {activeTab.value === tab.value && (
-        <motion.div
-          layoutId="clickedbutton"
-          transition={{ type: "spring", bounce: 0.3, duration: 0.7 }}
-          className="absolute inset-0 bg-gray-dark-2 rounded-full"
+        <div
+          className="absolute inset-0 bg-gray-dark-2 rounded-full transition-all duration-300"
         />
       )}
 
@@ -35,26 +32,34 @@ const Tab = ({ index, tab, activeTab, handleOnClick, setIsHovering }) => {
 };
 
 const TabsContent = ({ tabs, isHovering }) => {
+  const [bouncing, setBouncing] = useState(false);
+
+  useEffect(() => {
+    setBouncing(true);
+    const timer = setTimeout(() => setBouncing(false), 300);
+    return () => clearTimeout(timer);
+  }, [tabs[0].value]);
+
   return (
     <div className="relative w-full h-full">
       {tabs.map((tab, index) => {
+        const isTopTab = tab.value === tabs[0].value;
+        const bounceY = isTopTab && bouncing ? "20px" : "0px";
+        
         return (
-          <motion.div
+          <div
             key={tab.value}
-            layoutId={tab.value}
             style={{
-              scale: 1 - index * 0.1,
+              transform: `scale(${1 - index * 0.1}) translateY(${bounceY})`,
               top: isHovering ? index * -50 : 0,
               zIndex: -index,
               opacity: index < 3 ? 1 - index * 0.1 : 0,
-            }}
-            animate={{
-              y: tab.value === tabs[0].value ? [0, 40, 0] : 0,
+              transition: "all 0.5s ease",
             }}
             className="w-full h-full absolute top-0 left-0 mt-24 md:mt-20"
           >
             {tab.content}
-          </motion.div>
+          </div>
         );
       })}
     </div>
