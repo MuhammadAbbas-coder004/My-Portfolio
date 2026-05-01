@@ -92,171 +92,122 @@ export const SKILLS = {
     "supabase",
     "firebase",
   ],
-  other: ["git", "github", "nodejs", "express"],
+  backend: ["nodejs", "express"],
+  versionControl: ["git", "github"],
 };
 
 export const PROJECTS = [
   {
-    name: "NextBoss",
-    imageKey: "nextboss",
-    description: "Get hired through DMs not resumes 🤝",
-    gradient: ["#FF69B4", "#FFB6C1"], // hot pink to light pink (cherry blossom inspired)
-    url: null,
-    tech: ["typescript", "react", "expo", "react-query"],
+    name: "Micro Fiverr",
+    imageKey: "micro-fiverr",
+    description: "A freelancing marketplace built with modern web tech",
+    gradient: ["#4F46E5", "#1E1B4B"],
+    url: "https://hackathon-project-micro-fiverr-52a7.vercel.app/",
+    tech: ["react", "nextjs", "tailwindcss", "mongodb"],
   },
   {
-    name: "ReadyAI",
-    imageKey: "ready-ai",
-    description: "AI that gets you interview ready 🎯",
-    gradient: ["#F4D03F", "#58D68D"], // warm gold to fresh green
-    url: "https://play.google.com/store/apps/details?id=com.app.readyai",
-    tech: ["typescript", "react"],
+    name: "Invest Hub",
+    imageKey: "invest-hub",
+    description: "A full-stack startup platform where visionaries meet investors",
+    gradient: ["#4F46E5", "#7C3AED"],
+    url: "https://supabase-curd-dun.vercel.app/",
+    tech: ["supabase", "react", "nextjs", "tailwindcss"],
   },
   {
-    name: "Grapevine Round1 AI",
-    imageKey: "round1",
-    description: "Ace your round one in 9 minutes  💼",
-    gradient: ["#5D4037", "#8D6E63"], // dark brown to medium brown
-    url: "https://play.google.com/store/apps/details?id=com.app.gvine",
-    tech: ["typescript", "react", "react-query"],
+    name: "Meme Maker",
+    imageKey: "meme-maker",
+    description: "A viral meme generator built with Next.js and Tailwind CSS",
+    gradient: ["#F59E0B", "#EF4444"],
+    url: "https://next-js-meme-macker-app.vercel.app/",
+    tech: ["react", "nextjs", "tailwindcss"],
   },
   {
-    name: "React Native Directory",
-    imageKey: "react-native-directory",
-    description: "Search & filter React Native libraries via Raycast ⌨️",
-    gradient: ["#000000", "#1A1A1A"], // pure black to dark gray
-    url: "https://www.raycast.com/shubh_porwal/react-native-directory",
-    tech: ["typescript", "react", "expo", "raycast"],
+    name: "Expense Tracker",
+    imageKey: "expense-tracker",
+    description: "A sleek and efficient expense management system with real-time tracking",
+    gradient: ["#312E81", "#1E1B4B"], // Deep Indigo for original SVG visibility
+    url: "https://mini-project-expense-management-sys.vercel.app/",
+    tech: ["react", "tailwindcss"],
   },
   {
-    name: "Buywow",
+    name: "Quiz App",
+    imageKey: "quiz-app",
+    description: "An interactive tech trivia app with real-time feedback and score tracking",
+    gradient: ["#1E3A8A", "#2563EB"], // Royal Blue to Blue
+    url: "https://quiz-app-seven-khaki.vercel.app/",
+    tech: ["react", "tailwindcss"],
+  },
+  {
+    name: "Product Store",
     imageKey: "buywow",
-    description: "Official Wow Skin Science app 🌿",
-    gradient: ["#FFD54F", "#FFB300"], // bright golden yellow to deep orange
-    url: "https://play.google.com/store/apps/details?id=co.tapcart.app.id_99G6QNo3nu",
-    tech: ["typescript", "react", "react-query"],
-  },
-  {
-    name: "Bot9",
-    imageKey: "bot9",
-    description: "Automate support with AI 🤖",
-    gradient: ["#3F51B5", "#7986CB"], // indigo to medium blue
-    url: "https://bot9.ai/",
-    tech: ["typescript", "react", "nextjs", "tailwindcss"],
-  },
-  {
-    name: "Dukaan",
-    imageKey: "dukaan",
-    description: "Shopify for India 🛍️",
-    gradient: ["#1976D2", "#1565C0"], // material blue to deep blue
-    url: "https://play.google.com/store/apps/details?id=com.dukaan.app",
-    tech: ["typescript", "react", "firebase", "tailwindcss", "react-query"],
-  },
-  {
-    name: "Tesla",
-    imageKey: "tesla",
-    description: "Built with Expo 🏎️",
-    gradient: ["#0F172A", "#1E293B"], // midnight blue to dark slate (electric/tech feel)
-    url: "https://github.com/shubh73/tesla",
-    tech: ["javascript", "expo"],
-  },
-  {
-    name: "Airbnb",
-    imageKey: "airbnb",
-    description: "Built with NextJS + Tailwind CSS 🛏️",
-    gradient: ["#1F2937", "#6B7280"], // dark gray to medium gray
-    url: "https://shubh73-airbnb.vercel.app/",
-    tech: ["javascript", "react", "nextjs", "mapbox", "tailwindcss"],
-  },
-  {
-    name: "Medium",
-    imageKey: "medium",
-    description: "Built with NextJS + Tailwind CSS ✍🏻",
-    gradient: ["#FF9800", "#F57C00"], // warm orange to deep orange
-    url: "https://shubh73-medium.vercel.app/",
-    tech: ["typescript", "react", "nextjs", "tailwindcss", "sanity"],
-  },
-  {
-    name: "Inshorts",
-    imageKey: "inshorts",
-    description: "Voice-enabled news using Alan AI 🎙",
-    gradient: ["#6366F1", "#4F46E5"], // indigo to deep indigo
-    url: "https://shubh73-inshorts.netlify.app/",
-    tech: ["javascript", "react", "chakra-ui", "alan"],
+    description: "A comprehensive e-commerce platform with Redux-powered state management and Material UI",
+    gradient: ["#1A1A2E", "#16213E"], // Deep Dark Purple to Navy
+    url: "https://product-app-using-redux.vercel.app/",
+    tech: ["react", "redux", "materialui", "tailwindcss"],
   },
 ];
 
 export const WORK_CONTENTS = {
-  GRAPEVINE: [
+  FRONTEND: [
     {
-      title: "Grapevine",
+      title: "Frontend Development",
       description:
-        "Grapevine is your anonymous office chat, letting coworkers speak openly, share gossip and connect without filters. Building on that same belief, Round1 AI brings it to hiring using AI-driven interviews to replace guesswork with genuine and meaningful conversations.",
+        "Specialized in building highly interactive and responsive user interfaces using modern technologies like React, Next.js, and Tailwind CSS. Focused on delivering seamless user experiences across all devices and screen sizes.",
       content: (
-        <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Connect anonymously. Share freely.
+        <div className="h-full w-full flex items-center justify-center text-white px-4 text-center">
+          Crafting intuitive user interfaces
         </div>
       ),
     },
     {
-      title: "Pioneering",
+      title: "Performance & UI/UX",
       description:
-        "Hiring was broken — manual, biased, and slow. We launched Round1 AI to fix that: authentic voice interviews, built-in bias checks and real-time insights. Today, it powers thousands of interviews each week, letting teams hire smarter, faster and fairer.",
+        "Optimized web applications for maximum speed and scalability. Implemented complex animations using GSAP and translated UI/UX wireframes into high-quality, reusable code components.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          MERN Stack Developer
+          Frontend Engineer
         </div>
       ),
     },
     {
-      title: "Elevate",
+      title: "State Management",
       description:
-        "The early web app struggled with slow performance and zero retention. I rebuilt it from the ground up with a sleek UI, faster load times and SEO-optimized. Then seeded a rich content layer to spark discovery. The payoff? 6x more impressions and 10x the organic installs all without ads, just momentum.",
+        "Designed robust state management architectures using Redux and React Context API. Ensured smooth data flow between the frontend components and seamless integration with RESTful APIs.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          MERN Stack Developer
+          React & Next.js Expert
         </div>
       ),
     },
   ],
-  DUKAAN: [
+  BACKEND: [
     {
-      title: "Dukaan",
+      title: "Backend Architecture",
       description:
-        "Dukaan is a platform that enables businesses to launch their online stores at ease.",
+        "Architected scalable and secure backend systems using Node.js and Express. Focused on designing robust RESTful APIs and microservices that power complex web and mobile applications.",
       content: (
-        <div className="h-full w-full flex items-center justify-center text-white px-4">
-          Revolutionizing commerce, one click at a time
+        <div className="h-full w-full flex items-center justify-center text-white px-4 text-center">
+          Building scalable server architectures
         </div>
       ),
     },
     {
-      title: "Transformation",
+      title: "Database Management",
       description:
-        "Since 2023, the Dukaan Seller Dashboard struggled with technical issues and a broken user experience due to accumulated technical debt. Leading a team of two junior developers, we migrated the dashboard from CSR to SSR, redesigned the UI, and overhauled the codebase in the process. This resolved the technical debt and vastly improved the user experience, making it Dukaan's largest and most impactful migration.",
+        "Managed and optimized complex databases including MongoDB, Supabase, and Firebase. Implemented efficient database schemas, indexing strategies, and caching layers to reduce latency.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          MERN Stack Developer
+          Backend Engineer
         </div>
       ),
     },
     {
-      title: "Evolution",
+      title: "Security & Integration",
       description:
-        "Recognizing the need for improved performance and user engagement, I spearheaded the migration of the Dukaan App from native to React-Native for iOS and Android platforms. This strategic move led to a X% enhancement in app performance and a Y% boost in user engagement, representing a significant milestone in the app's evolution.",
+        "Implemented robust security protocols, including JWT authentication, OAuth, and data encryption. Integrated third-party APIs and payment gateways ensuring seamless and secure transactions.",
       content: (
         <div className="h-full w-full flex items-center justify-center text-white px-4">
-          MERN Stack Developer
-        </div>
-      ),
-    },
-    {
-      title: "Optimization",
-      description:
-        "Leveraging user feedback and analytics, I improved the seller web dashboard design, reducing bounce rates. Simultaneously, I overhauled the build process, slashing bundle size and boosting overall performance.",
-      content: (
-        <div className="h-full w-full flex items-center justify-center text-white px-4">
-          MERN Stack Developer Intern
+          API & Security Specialist
         </div>
       ),
     },

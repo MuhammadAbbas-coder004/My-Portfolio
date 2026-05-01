@@ -11,22 +11,22 @@ const Work = ({ isDesktop }) => {
   const tabItems = useMemo(
     () => [
       {
-        title: "Grapevine",
-        value: "grapevine",
+        title: "Frontend",
+        value: "frontend",
         content: (
           <StickyScroll
             isDesktop={isDesktop}
-            contentItems={WORK_CONTENTS.GRAPEVINE}
+            contentItems={WORK_CONTENTS.FRONTEND}
           />
         ),
       },
       {
-        title: "Dukaan",
-        value: "dukaan",
+        title: "Backend",
+        value: "backend",
         content: (
           <StickyScroll
             isDesktop={isDesktop}
-            contentItems={WORK_CONTENTS.DUKAAN}
+            contentItems={WORK_CONTENTS.BACKEND}
           />
         ),
       },

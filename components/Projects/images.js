@@ -1,4 +1,9 @@
-import nextboss from "../../public/projects/nextboss.webp";
+import microFiverr from "../../public/projects/micro-fiverr.png";
+import investHub from "../../public/projects/invest-hub.png";
+import memeMaker from "../../public/projects/meme-maker.png";
+import expenseTracker from "../../public/projects/expense-tracker.png";
+import quizApp from "../../public/projects/quiz-app.png";
+import eventManagement from "../../public/projects/event-management.webp";
 import readyAi from "../../public/projects/ready-ai.webp";
 import round1 from "../../public/projects/round1.webp";
 import reactNativeDirectory from "../../public/projects/react-native-directory.webp";
@@ -11,7 +16,12 @@ import inshorts from "../../public/projects/inshorts.webp";
 import tesla from "../../public/projects/tesla.webp";
 
 export const PROJECT_IMAGES = {
-  nextboss,
+  "micro-fiverr": microFiverr,
+  "invest-hub": investHub,
+  "meme-maker": memeMaker,
+  "expense-tracker": expenseTracker,
+  "quiz-app": quizApp,
+  "event-management": eventManagement,
   "ready-ai": readyAi,
   round1,
   "react-native-directory": reactNativeDirectory,

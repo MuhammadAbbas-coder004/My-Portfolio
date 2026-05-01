@@ -72,6 +72,8 @@ const Tabs = ({ tabItems }) => {
   const [activeTab, setActiveTab] = useState(tabItems[0]);
   const sfx = useSfx();
 
+  const activeIndex = tabItems.findIndex((t) => t.value === activeTab.value);
+
   const handleOnClick = (index) => {
     const updatedTabs = [...tabItems];
     const selectedTab = updatedTabs.splice(index, 1);
@@ -81,26 +83,62 @@ const Tabs = ({ tabItems }) => {
     sfx.play("tab-switch");
   };
 
+  const handlePrev = () => {
+    if (activeIndex > 0) {
+      handleOnClick(activeIndex - 1);
+    }
+  };
+
+  const handleNext = () => {
+    if (activeIndex < tabItems.length - 1) {
+      handleOnClick(activeIndex + 1);
+    }
+  };
+
   return (
     <div className="staggered-reveal">
-      <div className="pt-12 flex flex-row justify-center items-center [perspective:1000px] relative overflow-auto sm:overflow-visible no-visible-scrollbar max-w-full w-full">
-        {tabItems.map((tab, index) => (
-          <Tab
-            key={tab.title}
-            index={index}
-            tab={tab}
-            activeTab={activeTab}
-            handleOnClick={handleOnClick}
-            setIsHovering={setIsHovering}
-          />
-        ))}
-      </div>
       <TabsContent
         key={activeTab.value}
         tabs={tabs}
         activeTab={activeTab}
         isHovering={isHovering}
       />
+      {/* Previous / Next Buttons */}
+      <div className="flex justify-center items-center gap-6 mt-8">
+        <button
+          onMouseDown={handlePrev}
+          disabled={activeIndex === 0}
+          className={cn(
+            "flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-none",
+            activeIndex === 0
+              ? "bg-gray-dark-2/40 text-gray-light-3/40 cursor-not-allowed"
+              : "bg-gray-dark-2 text-white hover:bg-gray-dark-3 hover:scale-105"
+          )}
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+          Previous
+        </button>
+        <span className="text-gray-light-3 text-sm font-mono">
+          {activeIndex + 1} / {tabItems.length}
+        </span>
+        <button
+          onMouseDown={handleNext}
+          disabled={activeIndex === tabItems.length - 1}
+          className={cn(
+            "flex items-center gap-2 px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-none",
+            activeIndex === tabItems.length - 1
+              ? "bg-gray-dark-2/40 text-gray-light-3/40 cursor-not-allowed"
+              : "bg-gray-dark-2 text-white hover:bg-gray-dark-3 hover:scale-105"
+          )}
+        >
+          Next
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polyline points="9 6 15 12 9 18" />
+          </svg>
+        </button>
+      </div>
     </div>
   );
 };

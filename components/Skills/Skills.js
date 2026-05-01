@@ -65,15 +65,15 @@ const Skills = () => {
             </h3>
             <div className="flex items-center flex-wrap gap-6 staggered-reveal">
               {SKILLS.languagesAndTools.map((skill) => (
-                <div key={skill} className="flex flex-col items-center gap-2">
+                <div key={skill} className="flex items-center justify-center w-[50px] h-[50px]">
                   <img
                     src={`/skills/${skill}.svg`}
                     alt={skill}
                     width={50}
                     height={50}
+                    className="w-full h-full object-contain"
                     loading="lazy"
                   />
-                  <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
                 </div>
               ))}
             </div>
@@ -84,15 +84,15 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap gap-6 transform-gpu staggered-reveal">
               {SKILLS.librariesAndFrameworks.map((skill) => (
-                <div key={skill} className="flex flex-col items-center gap-2">
+                <div key={skill} className="flex items-center justify-center w-[50px] h-[50px]">
                   <img
                     src={`/skills/${skill}.svg`}
                     alt={skill}
                     width={50}
                     height={50}
+                    className={`w-full h-full object-contain ${skill === 'motionone' ? 'scale-150' : ''} ${skill === 'react' ? 'bg-white rounded-md p-[2px] scale-110' : ''}`}
                     loading="lazy"
                   />
-                  <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
                 </div>
               ))}
             </div>
@@ -104,34 +104,53 @@ const Skills = () => {
               </h3>
               <div className="flex flex-wrap gap-6 transform-gpu">
                 {SKILLS.databases.map((skill) => (
-                  <div key={skill} className="flex flex-col items-center gap-2">
+                  <div key={skill} className="flex items-center justify-center w-[50px] h-[50px]">
                     <img
                       src={`/skills/${skill}.svg`}
                       alt={skill}
                       width={50}
                       height={50}
+                      className="w-full h-full object-contain"
                       loading="lazy"
                     />
-                    <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="mr-16 xs:mr-20 mb-6 staggered-reveal">
+              <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4">
+                BACKEND
+              </h3>
+              <div className="flex flex-wrap gap-6 transform-gpu">
+                {SKILLS.backend.map((skill) => (
+                  <div key={skill} className="flex items-center justify-center w-[50px] h-[50px]">
+                    <img
+                      src={`/skills/${skill}.svg`}
+                      alt={skill}
+                      width={50}
+                      height={50}
+                      className="w-full h-full object-contain"
+                      loading="lazy"
+                    />
                   </div>
                 ))}
               </div>
             </div>
             <div className="staggered-reveal">
               <h3 className="uppercase tracking-widest text-gray-light-2 font-medium text-base mb-4">
-                BACKEND
+                VERSION CONTROL
               </h3>
               <div className="flex flex-wrap gap-6 transform-gpu">
-                {SKILLS.other.map((skill) => (
-                  <div key={skill} className="flex flex-col items-center gap-2">
+                {SKILLS.versionControl.map((skill) => (
+                  <div key={skill} className="flex items-center justify-center w-[50px] h-[50px]">
                     <img
                       src={`/skills/${skill}.svg`}
                       alt={skill}
                       width={50}
                       height={50}
+                      className="w-full h-full object-contain"
                       loading="lazy"
                     />
-                    <span className="text-[10px] uppercase tracking-tighter text-gray-light-2 font-mono">{skill}</span>
                   </div>
                 ))}
               </div>
