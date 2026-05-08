@@ -14,6 +14,7 @@ import airbnb from "../../public/projects/airbnb.webp";
 import medium from "../../public/projects/medium.webp";
 import inshorts from "../../public/projects/inshorts.webp";
 import tesla from "../../public/projects/tesla.webp";
+import ims from "../../public/projects/ims.png";
 
 export const PROJECT_IMAGES = {
   "micro-fiverr": microFiverr,
@@ -32,4 +33,5 @@ export const PROJECT_IMAGES = {
   medium,
   inshorts,
   tesla,
+  ims,
 };

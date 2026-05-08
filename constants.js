@@ -98,28 +98,12 @@ export const SKILLS = {
 
 export const PROJECTS = [
   {
-    name: "Micro Fiverr",
-    imageKey: "micro-fiverr",
-    description: "A freelancing marketplace built with modern web tech",
-    gradient: ["#4F46E5", "#1E1B4B"],
-    url: "https://hackathon-project-micro-fiverr-52a7.vercel.app/",
-    tech: ["react", "nextjs", "tailwindcss", "mongodb"],
-  },
-  {
-    name: "Invest Hub",
-    imageKey: "invest-hub",
-    description: "A full-stack startup platform where visionaries meet investors",
-    gradient: ["#4F46E5", "#7C3AED"],
-    url: "https://supabase-curd-dun.vercel.app/",
-    tech: ["supabase", "react", "nextjs", "tailwindcss"],
-  },
-  {
-    name: "Meme Maker",
-    imageKey: "meme-maker",
-    description: "A viral meme generator built with Next.js and Tailwind CSS",
-    gradient: ["#F59E0B", "#EF4444"],
-    url: "https://next-js-meme-macker-app.vercel.app/",
-    tech: ["react", "nextjs", "tailwindcss"],
+    name: "Quiz App",
+    imageKey: "quiz-app",
+    description: "An interactive tech trivia app with real-time feedback and score tracking",
+    gradient: ["#1E3A8A", "#2563EB"], // Royal Blue to Blue
+    url: "https://quiz-app-seven-khaki.vercel.app/",
+    tech: ["react", "tailwindcss"],
   },
   {
     name: "Expense Tracker",
@@ -130,20 +114,52 @@ export const PROJECTS = [
     tech: ["react", "tailwindcss"],
   },
   {
-    name: "Quiz App",
-    imageKey: "quiz-app",
-    description: "An interactive tech trivia app with real-time feedback and score tracking",
-    gradient: ["#1E3A8A", "#2563EB"], // Royal Blue to Blue
-    url: "https://quiz-app-seven-khaki.vercel.app/",
-    tech: ["react", "tailwindcss"],
-  },
-  {
     name: "Product Store",
     imageKey: "buywow",
     description: "A comprehensive e-commerce platform with Redux-powered state management and Material UI",
     gradient: ["#1A1A2E", "#16213E"], // Deep Dark Purple to Navy
     url: "https://product-app-using-redux.vercel.app/",
     tech: ["react", "redux", "materialui", "tailwindcss"],
+  },
+  {
+    name: "IMS Project",
+    imageKey: "ims",
+    description: "A modern Institute Management System with student and admin portals for seamless academic operations",
+    gradient: ["#9333EA", "#4F46E5"],
+    url: "https://react-ims-project.vercel.app/",
+    tech: ["react", "tailwindcss"],
+  },
+  {
+    name: "EventNexus",
+    imageKey: "event-management",
+    description: "A comprehensive event management and ticketing platform for discovering and booking technical events",
+    gradient: ["#000000", "#171717"],
+    url: "https://hackathon-project-event-management.vercel.app/",
+    tech: ["react", "tailwindcss"],
+  },
+  {
+    name: "Meme Maker",
+    imageKey: "meme-maker",
+    description: "A viral meme generator built with Next.js and Tailwind CSS",
+    gradient: ["#F59E0B", "#EF4444"],
+    url: "https://next-js-meme-macker-app.vercel.app/",
+    tech: ["react", "nextjs", "tailwindcss"],
+  },
+  {
+    name: "Invest Hub",
+    imageKey: "invest-hub",
+    description: "A full-stack startup platform where visionaries meet investors",
+    gradient: ["#4F46E5", "#7C3AED"],
+    url: "https://invest-hub-sepia.vercel.app/",
+    tech: ["supabase", "react", "nextjs", "tailwindcss"],
+  },
+  {
+    name: "Micro Fiverr",
+    imageKey: "micro-fiverr",
+    description: "A freelancing marketplace built with modern web tech",
+    gradient: ["#4F46E5", "#1E1B4B"],
+    url: "https://hackathon-project-micro-fiverr-52a7.vercel.app/",
+    tech: ["react", "nextjs", "tailwindcss", "mongodb"],
   },
 ];
 
